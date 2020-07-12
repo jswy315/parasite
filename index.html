@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Parasite Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"><img src="logo.png"></a>
+            <div class="toggle"><img src="toggle.png"></div>
+        </header>
+        <div class="banner">
+            <div class="content">
+                <h2>A Film <span>by</span> Bong Joon Ho</h2>
+                <p>Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.</p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png">Watch Trailer</a>
+            <div class="slide"></div>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="trailer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5xH0HfJHsaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen controls="true"></iframe>
+            <img src="close.png" class="close" onclick="toggle();">
+        </div>
+        <script type="text/javascript">
+        function toggle(){
+            var trailer = document.querySelector('.trailer');
+            trailer.classList.toggle('active')
+        }
+        </script>
+    </body>
+</html>
